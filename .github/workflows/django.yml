@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, pypy3]
-        django-version: [2.0, 2.1, 2.2, 3.0]
+        python-version: ['3.6', '3.7', '3.8', 'pypy3']
+        django-version: ['2.0', '2.1', '2.2', '3.0']
 
     steps:
     - uses: actions/checkout@v2
