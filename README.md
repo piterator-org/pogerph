@@ -1,0 +1,2 @@
+# pogerph
+Django Blog Application
