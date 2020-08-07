@@ -1,2 +1,3 @@
 # pogerph
+
 Django Blog Application
