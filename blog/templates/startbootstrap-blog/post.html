@@ -99,14 +99,17 @@
           </div>
         </div>
 
-        <!-- Single Comment -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="https://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        {% get_comment_list for post as comments %}
+        {% for comment in comments %}
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="https://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">{{ comment.submit_date }} - <a href="{{ comment.user_url }}">{{ comment.user_name }}</a> (<a href="mailto:{{ comment.user_email }}">@{{ comment.user }}</a>)</h5>
+              {{ comment.comment }}
+            </div>
           </div>
-        </div>
+        {% endfor %}
 
         <!-- Comment with nested comments -->
         <div class="media mb-4">
@@ -133,8 +136,6 @@
 
           </div>
         </div>
-
-        {% render_comment_list for post %}
 
       </div>
 
