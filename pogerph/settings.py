@@ -128,6 +128,6 @@ STATIC_URL = '/static/'
 
 
 # Site
-# https://docs.djangoproject.com/en/2.2/ref/settings/#sites
+# https://docs.djangoproject.com/en/2.2/ref/contrib/sites/
 
 SITE_ID = 1

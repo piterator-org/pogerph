@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+from django.urls import reverse
+
 
 class Category(models.Model):
     class Meta:
@@ -28,6 +30,9 @@ class Post(models.Model):
     class Meta:
         verbose_name = 'post'
         verbose_name_plural = 'posts'
+
+    def get_absolute_url(self):
+        return reverse('post', args=(self.slug,))
 
     title = models.CharField(max_length=100)
     subtitle = models.CharField(max_length=200, blank=True)
