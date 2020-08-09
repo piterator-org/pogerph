@@ -1,0 +1,21 @@
+{% load categories %}
+{% get_categories True as category_lists %}
+<!-- Categories Widget -->
+<div class="card my-4">
+  <h5 class="card-header">Categories</h5>
+  <div class="card-body">
+    <div class="row">
+      {% for categories in category_lists %}
+        <div class="col-lg-6">
+          <ul class="list-unstyled mb-0">
+            {% for category in categories %}
+              <li>
+                <a href="#">{{ category.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
