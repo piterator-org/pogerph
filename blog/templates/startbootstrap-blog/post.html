@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static comments %}
+{% load static %}
 <html lang="en">
 
 <head>
@@ -11,8 +11,7 @@
 
   <title>{{ post }} - Start Bootstrap Template</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'startbootstrap-blog/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  {% include "startbootstrap-blog/includes/bootstrap-core-css.html" %}
 
   <!-- Custom styles for this template -->
   <link href="{% static 'startbootstrap-blog/css/blog-post.css' %}" rel="stylesheet">
@@ -73,6 +72,7 @@
           </div>
         </div>
 
+        {% load comments %}
         {% get_comment_list for post as comments %}
         {% for comment in comments %}
           <!-- Single Comment -->
@@ -123,9 +123,7 @@
 
   {% include "startbootstrap-blog/includes/footer.html" %}
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'startbootstrap-blog/vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'startbootstrap-blog/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  {% include "startbootstrap-blog/includes/bootstrap-core-javascript.html" %}
 
 </body>
 

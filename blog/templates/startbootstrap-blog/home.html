@@ -11,8 +11,7 @@
 
   <title>Blog Home - Start Bootstrap Template</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'startbootstrap-blog/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  {% include "startbootstrap-blog/includes/bootstrap-core-css.html" %}
 
   <!-- Custom styles for this template -->
   <link href="{% static 'startbootstrap-blog/css/blog-home.css' %}" rel="stylesheet">
@@ -73,9 +72,7 @@
 
   {% include "startbootstrap-blog/includes/footer.html" %}
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'startbootstrap-blog/vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'startbootstrap-blog/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  {% include "startbootstrap-blog/includes/bootstrap-core-javascript.html" %}
 
 </body>
 
