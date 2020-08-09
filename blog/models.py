@@ -44,6 +44,12 @@ class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL,
                                  null=True, blank=True)
     tag = models.ManyToManyField(Tag, blank=True)
+    markup = models.SlugField(choices=[
+        ('html', 'HTML'),
+        ('md', 'Markdown'),
+        ('rst', 'reStructuredText'),
+        ('txt', 'Text'),
+    ], default='md')
     content = models.TextField(blank=True)
 
     def __str__(self):
