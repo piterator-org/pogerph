@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+{% load static comments %}
 <html lang="en">
 
 <head>
@@ -133,6 +133,8 @@
 
           </div>
         </div>
+
+        {% render_comment_list for post %}
 
       </div>
 
