@@ -8,3 +8,6 @@
     <img src="https://static.piterator.com/pogerph/pogerph.svg" alt="Pogerph" width="30%">
   </a>
 </p>
+
+# Pogerph
+> A Django Based Blog App.
