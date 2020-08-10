@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 <p align="center">
   <a href="https://github.com/piterator-org">
-    <img src="https://static.piterator.com/piterator/logo.svg" alt="Piterator" width="20%">
+    <img src="https://static.piterator.com/piterator/logo.svg" alt="Piterator" width="15%">
   </a>
   <br>
   <a href="https://github.com/piterator-org/pogerph">
