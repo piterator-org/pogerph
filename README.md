@@ -10,4 +10,5 @@
 </p>
 
 # Pogerph
-> A Django Based Blog App.
+
+A Django Based Blog App.
