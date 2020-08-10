@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{% block description %}{% endblock %}">
+  <meta name="author" content="{% block author %}{% endblock %}">
+
+  <title>{% block title %}Blog - Start Bootstrap Template{% endblock %}</title>
+
+  {% include "startbootstrap-blog/includes/style.html" %}
+  {% block style %}{% endblock %}
+
+</head>
+
+<body>
+
+  {% include "startbootstrap-blog/includes/navigation.html" %}
+
+  {% block content %}
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        {% block column %}
+          <!-- Page Content Column -->
+          <div class="col-md-8">
+
+            <h1 class="mt-4">Page Heading
+              <small>Secondary Text</small>
+            </h1>
+
+          </div>
+        {% endblock %}
+
+        {% include "startbootstrap-blog/includes/sidebar-widgets-column.html" %}
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  {% endblock %}
+
+  {% block footer %}
+    {% include "startbootstrap-blog/includes/footer.html" %}
+  {% endblock %}
+
+  {% include "startbootstrap-blog/includes/script.html" %}
+  {% block script %}{% endblock %}
+
+</body>
+
+</html>
