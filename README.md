@@ -5,7 +5,7 @@
   </a>
   <br>
   <a href="https://github.com/piterator-org/pogerph">
-    <img src="https://static.piterator.com/pogerph/pogerph.svg" alt="Pogerph" width="30%">
+    <img src="https://static.piterator.com/pogerph/pogerph.svg?" alt="Pogerph" width="30%">
   </a>
 </p>
 
